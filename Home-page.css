@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 15px;
+  background-color: rgb(83, 83, 83);
+}
+
+#navbar {
+  position: fixed;
+  top: 15;
+  z-index: 1;
+  width: 100%;
+}
+
+.menu {
+  background-color: rgb(131, 131, 131);
+}
+
+.menu li a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.menu li {
+  padding: 10px;
+  display: inline-block;
+}
+
+.menu li:hover {
+  background-color: black;
+  font-weight: bolder;
+}
+
+.menu li:nth-child(2):hover .dropdown,
+.menu li:nth-child(3):hover .dropdown {
+  display: block;
+}
+
+.dropdown {
+  position: absolute;
+  width: auto;
+  max-width: 100px;
+  display: none;
+  top: 42.5px;
+  background-color: rgb(233, 230, 230);
+  padding: 0%;
+  margin-left: -10px;
+}
+
+.dropdown:hover {
+  display: block;
+}
+
+.dropdown li:hover {
+ background-color: rgb(209, 191, 191);
+}
+
+.dropdown li a {
+  color: rgb(70, 130, 180);
+  font-size: 15px;
+}
+
+#ad {
+  overflow: hidden;
+  height: 350px;
+  border: 2px solid steelblue;
+  animation: banner 10s linear infinite;
+  margin: 5px;
+  background-repeat: no-repeat;
+  z-index: -1;
+  width: 385;
+  background-size: contain;
+  margin-top: 4%;
+  background-position: center;
+}
+@keyframes banner {
+  0% {
+    background-image: url("images/Animation/ani1.jpg");
+    background-size: cover;
+  }
+  20% {
+    background-image: url("images/Animation/ani2.png");
+    background-size: cover;
+  }
+  40% {
+    background-image: url("images/Animation/ani3.jpg");
+    background-size: cover;
+  }
+  60% {
+    background-image: url("images/Animation/ani4.jpg");
+    background-size: cover;
+  }
+  80% {
+    background-image: url("images/Animation/ani5.jpg");
+    background-size: cover;
+  }
+  100% {
+    background-image: url("images/Animation/ani1.jpg");
+    background-size: cover;
+  }
+}
+
+.Care {
+  margin: 20px;
+}
+
+.products {
+  position: relative;
+  margin: 15px;
+  width: 200px;
+  height: 250px;
+  display: inline-block;
+  padding: 10px;
+  transition: 0.3s;
+  background-color: rgb(243, 243, 253);
+  box-shadow: 0 8px 18px 0 rgba(0, 0, 0, 0.2), 0 8px 28px 0 rgba(0, 0, 0, 0.19);
+}
+
+.products:hover {
+  width: 225px;
+  height: 290px;
+}
+
+.products img {
+  width: 100%;
+  height: 60%;
+}
+
+.description {
+  color: rgb(83, 156, 236);
+}
+
+.button {
+  background-color: #e6e6fa;
+  border: 2px solid rgb(115, 115, 253);
+  color: rgb(255, 167, 16);
+  font-weight: 800;
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 5%;
+}
+
+.button:focus {
+  background-color: rgb(250, 234, 230);
+  border: rgb(0, 255, 76);
+}
+
+footer {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  padding: 20px;
+  position: relative;
+  bottom: 0%;
+  text-align: center;
+}
